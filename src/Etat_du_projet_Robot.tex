@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage[frenchb]{babel}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{float}
+\usepackage{hyperref}
+
+\title{ASCII\\
+Année scolaire 2016 -- 2017\\
+État du projet robot}
+\date{\`A jour à la date du 29 Novembre 2016}
+\author{Projet tenu par Nathan \bsc{Touroux} \and Suivi par Corentin \bsc{Chédotal}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Ce document a pour but de réunir en un seul point les différentes informations concernant le projet robot de l'ASCII. Ainsi vous trouverez une description du projet en tant que tel, l'état de celui-ci quand il a été repris en début d'année et les divers comptes-rendus des réunions qui ont déjà eu lieues.\\
+    Pour rappel il est toujours possible de rejoindre ce projet tous les mardis vers 18h30 à l'ASCII.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction du projet}
+
+    TODO\\
+    Renvoi à image des couches fonctionnelles prévues (en annexe)
+    
+\section{État du projet à la rentrée 2016}
+
+    TODO
+    
+\section{Comptes-rendus de réunions}
+
+    A la suite de cette partie se trouve les comptes-rendus des diverses réunions de cette année du projet. Ainsi même si cela ne remplace pas la présence aux réunions ou simplement de voir avec les autres participants au projet ce qu'il s'est passé cela permet de réunir en un seul endroit des informations sur les différentes réunions.\\ 
+    Attention ces compte-rendus ne sont pas exhaustifs.
+
+    \subsection{Réunion du 15 Novembre 2016}
+    
+        TODO\\
+        Récupérer les notes de la réunion précédente
+        
+    \subsection{Réunion du 22 Novembre 2016}
+
+        Il est décidé de finalement changer le design général du robot en remplaçant sa propulsion de roues arrières vers un système de chenilles. En effet le système pensé et prévu jusqu'à maintenant se verrait faire face à des problèmes de contrôle à cause de l'absence de différentiel et la présence d'un seul moteur. Le robot aurait de grandes difficultés à tourner, d'autant plus sur le sol carrelé des couloirs. Ainsi il apparaît nécessaire de partir plus ou moins sur une nouvelle base vierge étant donné le travail qui serait requis pour changer les pièces incompatibles déjà modélisées.
+        \newline
+        
+        Les recherches des nouvelles pièces tournent autour de pièces et chenilles ou LEGO ou modélisées et imprimées 3D sur mesure.
+        \newline
+        
+        Niveau programmation, le langage de programmation principal choisi (concernant le Raspberry Pi et les éventuelles ordinateurs connectés en externe) est le Java. En ce qui concerne la carte Arduino il sera employé le langage C adapté Arduino.\\
+        Cependant avant de commencer à coder pour Arduino il est rappelé que lire la documentation technique est essentiel étant donné les quelques différences existants entre les modèles d'Arduino. Étant donné les différentes couches logicielles qui devront communiquer il est important aussi de faire attention au protocole de communication éventuellement employé.
+        \newline
+        
+        Enfin cette réunion a vu l'assignation de premiers rôles/domaines de travail aux différents acteurs du projet. On a ainsi :
+        \begin{itemize}
+            \item Nathan \bsc{Touroux} : Assemblage, mécanique\dots
+            \item Sami \bsc{Soudani} : Arduino
+            \item Bertrand \bsc{Lainé} : Protocoles de communication
+            \item Léonard \bsc{Imbert} : Transmission des messages entre l'extérieur et la carte Arduino
+            \item Alice \bsc{Bardier} : Spécification fonctionnelle
+        \end{itemize}
+
+    \subsection{Réunion du 29 Novembre 2016}
+
+        TODO\\
+        Récupérer les notes de la réunion précédente + parler de l'ajout de l'équipe et du répo GitHub
+
+\end{document}
