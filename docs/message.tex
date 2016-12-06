@@ -67,33 +67,33 @@ Un agent a priori esclave ESCLAVE veut remonter un événement vers éventuellem
 \begin{center}
 	\textbf{\{O:ESCLAVE;S:PANNE\}}
 \end{center}
-%\section{extension possible}
-%On pourrait éventuellement ajouter un champ optionnel \underline{Urgence} pour hiérarchiser au sens du destinataire le traitement des messages en cas de congestion. 
-%\section{implémentation possibles}
-%\subsection{plateforme}
-%La création d'une classe \underline{plateforme} (singleton) peut être envisagée pour faciliter les mécanismes d'échanges. On peut opter pour différents degrés d'abstraction:
-%\begin{itemize}
-%	\item L'agent gère de façon autonome son socket ou ses sockets de communication, il s'attribue lui même une ou des adresses IP et des ports UDP
-%	\item L'agent gère lui même son/ses sockets mais les attributs de ceux ci sont fournis par la plateforme (Intérêt de la méthode, on n'a plus de problème de double utilisation de port UDP, la gestion de ceux ci étant centralisée, la connaissance de l'adresse IP étant masquée)
-%	\item tout est géré par la plateforme qui offre une méthode de réception de message et masque complétement l'aspect socket.
-%\end{itemize}
-%Le cas qui semble le plus adapté est le second dans ce cas la plateforme offrirait est service suivant:
-%\begin{itemize}
-%	\item declare(Nom de l'agent) retourne @IP,port à utiliser lors de la création du socket de communication de l'agent.
-%	\item declare(Nom de l'agent,IP,port) retourne void et permet d'ajouter un autre agent sur le même socket.
-%	\item get(Nom de l'agent) retourne @IP,port à utiliser pour joindre le destinataire	
-%\end{itemize}
-%\subsection{Parser}
-%On peut créer une classe qui sérialise/de-sérialise les massage qui offrirait quelques constructeurs du style MSG(ORIG,DEST) ou MSG() et des méthode d'accès aux attributs:
-%\begin{itemize}
-%	\item getDest et setDest
-%	\item getOrig et setOrig
-%	\item getAction et setAction
-%	\item ....
-%\end{itemize}
-%et deux méthodes
-%\begin{itemize}
-%	\item Parse que prends en entrée une chaine de caractère et l'interprete
-%	\item serialize qui a partir des attributs qui ont été postionnés construit le message à envoyer.
-%\end{itemize}
+\section{extension possible}
+On pourrait éventuellement ajouter un champ optionnel \underline{Urgence} pour hiérarchiser au sens du destinataire le traitement des messages en cas de congestion. 
+\section{implémentation possibles}
+\subsection{plateforme}
+La création d'une classe \underline{plateforme} (singleton) peut être envisagée pour faciliter les mécanismes d'échanges. On peut opter pour différents degrés d'abstraction:
+\begin{itemize}
+	\item L'agent gère de façon autonome son socket ou ses sockets de communication, il s'attribue lui même une ou des adresses IP et des ports UDP
+	\item L'agent gère lui même son/ses sockets mais les attributs de ceux ci sont fournis par la plateforme (Intérêt de la méthode, on n'a plus de problème de double utilisation de port UDP, la gestion de ceux ci étant centralisée, la connaissance de l'adresse IP étant masquée)
+	\item tout est géré par la plateforme qui offre une méthode de réception de message et masque complétement l'aspect socket.
+\end{itemize}
+Le cas qui semble le plus adapté est le second dans ce cas la plateforme offrirait est service suivant:
+\begin{itemize}
+	\item declare(Nom de l'agent) retourne @IP,port à utiliser lors de la création du socket de communication de l'agent.
+	\item declare(Nom de l'agent,IP,port) retourne void et permet d'ajouter un autre agent sur le même socket.
+	\item get(Nom de l'agent) retourne @IP,port à utiliser pour joindre le destinataire	
+\end{itemize}
+\subsection{Parser}
+On peut créer une classe qui sérialise/de-sérialise les massage qui offrirait quelques constructeurs du style MSG(ORIG,DEST) ou MSG() et des méthode d'accès aux attributs:
+\begin{itemize}
+	\item getDest et setDest
+	\item getOrig et setOrig
+	\item getAction et setAction
+	\item ....
+\end{itemize}
+et deux méthodes
+\begin{itemize}
+	\item Parse que prends en entrée une chaine de caractère et l'interprete
+	\item serialize qui a partir des attributs qui ont été postionnés construit le message à envoyer.
+\end{itemize}
 \end{document}
