@@ -7,12 +7,13 @@
 \usepackage[frenchb]{babel}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{float}
+\usepackage[cdot]{SIunits}
 \usepackage{hyperref}
 
 \title{ASCII\\
 Année scolaire 2016 -- 2017\\
 État du projet robot}
-\date{\`A jour à la date du 29 Novembre 2016}
+\date{\`A jour à la date du 6 Décembre 2016}
 \author{Projet tenu par Nathan \bsc{Touroux} \and Suivi par Corentin \bsc{Chédotal}}
 
 \begin{document}
@@ -20,7 +21,8 @@ Année scolaire 2016 -- 2017\\
 \maketitle
 
 \begin{abstract}
-    Ce document a pour but de réunir en un seul point les différentes informations concernant le projet robot de l'ASCII. Ainsi vous trouverez une description du projet en tant que tel, l'état de celui-ci quand il a été repris en début d'année et les divers comptes-rendus des réunions qui ont déjà eu lieues.\\
+    Ce document a pour but de réunir en un seul point les différentes informations concernant le projet robot de l'ASCII. Ainsi vous trouverez une description du projet en tant que tel, l'état de celui-ci quand il a été repris en début d'année et les divers comptes-rendus des réunions qui ont déjà eu lieues.
+    
     Pour rappel il est toujours possible de rejoindre ce projet tous les mardis vers 18h30 à l'ASCII.
 \end{abstract}
 
@@ -74,5 +76,19 @@ Année scolaire 2016 -- 2017\\
 
         TODO\\
         Récupérer les notes de la réunion précédente + parler de l'ajout de l'équipe et du répo GitHub
+        
+    \subsection{Réunion du 6 Décembre 2016}
+    
+        En début de réunion Nathan s'assure que tous les participants présents sont bien ajoutés sur le répertoire GitHub et sur le client de chat Gitter. Plusieurs fichiers ayant été téléversés sur l'ancien répertoire Git il est noté que le transfert de ces fichiers sera donc à faire. De plus il est conseillé aux membres néophytes dans l'emploi de Git de se renseigner par les différents tutoriels en ligne ou de voir avec les participants plus expérimentés.
+        \newline
+        
+        Ensuite Nathan a présenté le fonctionnement du moteur pas à pas et son emploi avec un Arduino. Il a fait sa présentation avec un petit cas concret. Il a évoqué les avantages et inconvénients de cette pièce (fort couple mais celui-ci réduisant avec la vitesse, consommation électrique importante\dots). S'en est suivie une discussion sur ces moteurs et les moyens de les alimenter. En effet il apparaît nécessaire de trouver une alimentation en 24\volt pour les moteurs qui sont à disposition de l'association. Le problème principal est que la très grand majorité des batteries rechargeables pas trop chères produisent autour de 5\volt. Un des moyens possibles évoqués comme étant le plus prometteur serait de mettre des batteries d'airsoft ($\approx 10-12$\volt\ avec une bonne autonomie) connectées en série pour atteindre le bon voltage.\\
+        Dans un futur proche il serait plus pratique d'employer des piles rechargeables. Il serait donc nécessaire de les recharger très souvent mais cela ne nécessitera pas de vrais achats et sera suffisant pour réaliser des essais.
+        \newline
+        
+        Finalement Bertrand a présenté rapidement le travail qu'il a fait dans le domaine de la communication des divers acteurs logiciel du robot. Ainsi il a évoqué la syntaxe à mettre en place dans les messages (destinataire, référence si nécessaire, le message en lui-même\dots). Il rappelle à quel point il est nécessaire de n'employer qu'une seule syntaxe afin de faciliter la communication mais aussi la lisibilité par l'Utilisateur en particulier dans le cas de production de logs.
+        \newline
+        
+        La réunion s'est terminée par Nathan rappelant à chacun que le repertoire GitHub étant désormais en place les différents participants pouvaient téléverser dessus leurs diverses expérimentations.
 
 \end{document}
