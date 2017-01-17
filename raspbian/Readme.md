@@ -92,3 +92,6 @@ I (Leonard) personnally use [qemu](http://wiki.qemu.org/Main_Page) with an offic
  ```
  - Drink your coffee
 
+## Utility script
+ - compile.sh: Simple script which compile the project into a target folder
+ - run.sh: Simple script which run the compiled project
